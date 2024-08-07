@@ -71,7 +71,7 @@ group by students.studentid
 #### -- Запрос 9: Найти пересечение идентификаторов студентов, получавших и 2, и 5. Каждый идентификатор из пересечения должен встречаться не более одного раза
 ```sql
 select studentid from exam_result where grade = 2 
-INTERSECT 
+intersect 
 select studentid from exam_result where grade = 5 
 group by studentid
 order by studentid
